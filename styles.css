@@ -47,6 +47,7 @@ body {
 .nav-links a:hover {
     color: #60A5FA;
 }
+
 .hamburger {
     display: none;
     font-size: 1.8rem;
@@ -58,7 +59,7 @@ body {
     left: -100%;
     width: 70%;
     height: 100vh;
-    background:  rgb(23, 112, 3);
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,6 +71,7 @@ body {
     text-decoration: none;
     font-size: 1.2rem;
     margin: 10px 0;
+    transition: 0.3s;
 }
 .hero-section{
     display: flex;
@@ -83,6 +85,60 @@ body {
     right: 20px;
     font-size: 2rem;
     cursor: pointer;
+}
+.about-section {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.about-image img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.about-content {
+  max-width: 600px;
+}
+
+.about-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00d4ff;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #00d4ff;
+  color: #000;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0ff;
 }
 section {
     padding: 2rem;
@@ -106,6 +162,106 @@ section {
     text-align: center;
   
 }
+.training-section {
+  padding: 60px 20px;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+}
+
+.training-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #00d4ff;
+}
+
+.training-header p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.training-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  color: #000;
+  width: 300px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  padding: 15px 20px 0;
+  color: #203a43;
+}
+
+.card p {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.card .btn {
+  display: block;
+  margin: 15px 20px 20px;
+  background: #00d4ff;
+  color: #000;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.card .btn:hover {
+  background: #0ff;
+}
+
+.map-section {
+  padding: 60px 20px;
+  background-color: #f0f4fa;
+  text-align: center;
+}
+
+.map-section h2 {
+  color: #00d4ff;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.map-section p {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.map-container {
+  max-width: 1000px;
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -196,16 +352,6 @@ section {
     font-size: 14px;
     color: #ccc;
   }  
-
-
-
-
-
-
-
-
-
-
 
 
 

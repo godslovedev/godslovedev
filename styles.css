@@ -191,6 +191,186 @@ section {
     text-align: center;
   
 }
+/* General section styling */
+.art-section {
+  padding: 40px 20px;
+  background-color: #f5faff;
+  text-align: center;
+}
+
+.art-section h2 {
+  color: #00d4ff;
+  margin-bottom: 30px;
+}
+
+/* Art gallery grid */
+.art-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Individual card */
+.art-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.art-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Image with mask */
+.image-mask {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.image-mask img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.4s ease, transform 0.4s ease;
+  filter: brightness(60%);
+}
+
+.art-card:hover img {
+  filter: brightness(100%);
+  transform: scale(1.03);
+}
+
+/* Text info */
+.art-info {
+  padding: 15px;
+  text-align: left;
+}
+
+.art-info h3 {
+  margin: 0;
+  color: #00d4ff;
+  font-size: 1.2em;
+}
+
+.art-info p {
+  color: #333;
+  margin-top: 5px;
+}
+.about-section {
+  padding: 40px 20px;
+  background-color: #f5faff;
+  text-align: center;
+}
+
+.about-section h2 {
+  color: #00d4ff;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.about-container {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #e4dede;
+  line-height: 1.6;
+}
+
+#full-about.hidden {
+  display: none;
+}
+
+
+.projects-section {
+  padding: 60px 20px;
+  background: #ffffff;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 30px;
+  color: #00d4ff;
+  margin-bottom: 40px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.project-card {
+  background: #f1faff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-image {
+  position: relative;
+  overflow: hidden;
+  height: 180px;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.project-image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(10, 10, 10, 0.5);
+  transition: opacity 0.3s ease;
+}
+
+.project-card:hover .overlay {
+  opacity: 0;
+}
+
+.project-card h3 {
+  margin: 15px 10px 5px;
+  color: #333;
+}
+
+.project-card p {
+  margin: 0 10px 15px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+#read-more-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #00d4ff;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#read-more-btn:hover {
+  background-color: #009bc3;
+}
+
 .training-section {
   padding: 60px 20px;
   background: linear-gradient(to right, #0f2027, #203a43, #2c5364);

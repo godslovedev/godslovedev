@@ -47,3 +47,15 @@ entries.forEach(el => observer.observe(el));
 
 
 
+ function toggleReadMore() {
+    const full = document.getElementById("full-about");
+    const btn = document.getElementById("read-more-btn");
+
+    if (full.classList.contains("hidden")) {
+      full.classList.remove("hidden");
+      btn.textContent = "Read Less<<";
+    } else {
+      full.classList.add("hidden");
+      btn.textContent = "Read More>>";
+    }
+  }
